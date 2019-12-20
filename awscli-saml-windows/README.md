@@ -45,8 +45,10 @@ Authenticating as useremailaddress ...
 
 To eliminate login prompts:
 Run `saml2aws login --skip-prompt --profile=$AWS_PROFILE --role=$ROLE`
-Ex. `saml2aws login --skip-prompt --profile=aws-sampleaccount --role=arn:aws:iam::1111113333:role/ADFS-EnterpriseAdmin`
+
+Ex. saml2aws login --skip-prompt --profile=aws-sampleaccount --role=arn:aws:iam::1111113333:role/ADFS-EnterpriseAdmin
 
 To re-enforce login (a new access key pair with be stored in the AWS Configuration) :
 Run `saml2aws login --skip-prompt --profile=$AWS_PROFILE --role=$ROLE --force`
-Ex. `saml2aws login --skip-prompt --profile=aws-sampleaccount --role=arn:aws:iam::1111113333:role/ADFS-EnterpriseAdmin --force`
+
+Ex. saml2aws login --skip-prompt --profile=aws-sampleaccount --role=arn:aws:iam::1111113333:role/ADFS-EnterpriseAdmin --force

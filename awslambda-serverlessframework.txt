@@ -12,7 +12,7 @@ in cmd: npm install -g serverless
 -am - user- programtically option
 4. Download credentials
 5. Setup serverless using credentials
-serverless config credentials --provider aws --key AKIAZJ3E7L37TC3MDVE6 --secret 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 --profile serverless-admin
+serverless config credentials --provider aws --key xxx --secret xxx --profile serverless-admin
 
 Create first serverless:
 

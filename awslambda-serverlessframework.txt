@@ -1,1 +1,62 @@
 #AWS Lambda - no servers , just functions!
+
+Installing serverless
+1. Install dependencies (node & aws cli)
+Windows: install chocolatey and cinst nodejs.install
+https://nodejs.org/en/download/package-manager/#windows
+
+2. Install the serverless framework
+
+in cmd: npm install -g serverless
+3. Setting up AWS for the serverless-admin user
+-am - user- programtticaly option
+4. Download credentials
+5. Setup serverless using credentials
+serverless config credentials --provider aws --key AKIAZJ3E7L37TC3MDVE6 --secret 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 --profile serverless-admin
+
+Create first serverless:
+
+>sls create --template aws-python --path hello-world-python
+
+
+
+	Ø Modify config 
+
+
+
+	5. Deploy serverless : sks deploy -v
+	6. Invoke via cmd: sls invoke -f hello -l
+	
+
+
+
+
+
+
+
+
+
+To update function without configuration of the stack.
+
+
+
+
+Check logs in console:
+Monitoring - > view logs in cloudwatch
+
+
+
+
+
+
+
+In cmd:
+>sls logs -f hello -t
+
+
+Destroying the service:
+>sls remove
+
+
+
+
